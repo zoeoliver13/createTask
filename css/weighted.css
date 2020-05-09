@@ -1,0 +1,14 @@
+*{
+  font-family: "Lucida Console", Courier, monospace;
+  background-color: #00bab7;
+}
+/*TYPE SELECTORS*/
+h1{
+  font-size: 80px;
+  text-align: center;
+  color: white;
+  text-shadow: 4px 4px 0 #ff00b3, 2px 2px 0 #ff00b3;
+}
+/*CLASS SELECTORS*/
+
+/*ID SELECTORS*/

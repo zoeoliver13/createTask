@@ -1,0 +1,71 @@
+*{
+  font-family: "Lucida Console", Courier, monospace;
+  background-color: #00bab7;
+}
+/*TYPE SELECTORS*/
+h1{
+  font-size: 80px;
+  text-align: center;
+  color: white;
+  text-shadow: 4px 4px 0 #ff00b3, 2px 2px 0 #ff00b3;
+  background-color: black;
+}
+
+h2{
+  font-size: 45px;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+/*ClASS SELECTORS*/
+.popUp{
+  font-size: 40px;
+  padding-top: 10px;
+  position: relative;
+  bottom: -50px;
+  right: -400px;
+}
+.topHalf{
+  background-color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-width: 5px;
+  border-color: #ff00b3;
+  margin-top: 100px;
+}
+
+.unweighted{
+  margin-top: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding: 15px 25px;
+  font-size: 50px;
+  background-color: white;
+  color: #ff00b3;
+  font-weight:bold;
+  border-radius: 10px;
+  box-shadow: 0 10px #ff00b3;
+}
+
+.unweighted:active{
+  background-color: white;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.weighted{
+  padding: 15px 25px;
+  font-size: 50px;
+  background-color: white;
+  color: #ff00b3;
+  font-weight:bold;
+  border-radius: 10px;
+  box-shadow: 0 10px #ff00b3;
+}
+
+.weighted:active{
+  background-color: white;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+/*ID SELECTORS*/

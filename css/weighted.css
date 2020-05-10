@@ -9,6 +9,28 @@ h1{
   color: white;
   text-shadow: 4px 4px 0 #ff00b3, 2px 2px 0 #ff00b3;
 }
+tr{
+  padding-bottom: 5px;
+}
 /*CLASS SELECTORS*/
 
 /*ID SELECTORS*/
+#first{
+  margin-right: 10px;
+}
+#trash{
+  width:50px;
+  height:50px;
+  border: none;
+  background-size: 100%;
+  background-size: 40px auto;
+}
+
+#inputGrade{
+  width:17px;
+  margin: 10px 10px 10px 10px;
+}
+
+#inputWeight{
+  margin: 10px 10px 10px 10px;
+}

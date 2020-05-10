@@ -11,12 +11,11 @@ function addClass(table) {
   var grades = document.createElement("INPUT");
   grades.setAttribute("type","text");
   grades.setAttribute("size", "2");
-  grades.placeholder = "A";
+  //grades.placeholder = "A";
   grades.style.margin = "30px 10px 10px 25px";
   grades.style.padding = "10px 10px 10px 10px";
   grades.style.textAlign = "center";
   grades.style.borderRadius = "5px";
-
   cell2.appendChild(grades);
   var cell3 = row.insertCell(2);
   var weight = document.createElement("INPUT");
@@ -43,6 +42,18 @@ function addClass(table) {
     div.remove();
           }
         }
-  /*CHECKS IF ANY BOXES ARE EMPTY*/
+}
 
+function submit(){
+  var grades = document.createElement("INPUT");
+  grades.setAttribute("type","text");
+  inputGrades = grades.value;
+  var weight = document.createElement("INPUT");
+  weight.setAttribute("type","text");
+  inputWeight = weight.value;
+if( grades.value == null){
+    alert("not working");
+  }else{
+    alert(" working");
+  }
 }

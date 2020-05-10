@@ -3,6 +3,11 @@
   background-color: #00bab7;
 }
 /*TYPE SELECTORS*/
+a{
+  display: block;
+  color: black;
+  text-decoration: none;
+}
 h1{
   font-size: 80px;
   text-align: center;
@@ -14,6 +19,7 @@ table {
   margin-left: 20px;
   border-collapse: collapse;
   overflow-y:scroll;
+  margin-top: 30px;
 }
 
 th, td {
@@ -26,8 +32,12 @@ li{
   float: center;
   vertical-align: middle;
 }
-/*CLASS SELECTORS*/
 
+ol{
+  text-align: center;
+  display: inline;
+}
+/*CLASS SELECTORS*/
 /*ID SELECTORS*/
 
 #classTitle{
@@ -81,7 +91,7 @@ li{
   position: relative;
   color: #ff00b3;
   right:170px;
-  top: 0px;
+  top: 15px;
   margin-bottom: 10px;
   padding: 0px 15px 0px 15px;
   border-radius: 40px;

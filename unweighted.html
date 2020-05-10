@@ -5,10 +5,89 @@
     <meta name="viewport" content="width=device-width">
     <title>Highschool GPA Calculator</title>
     <link href = "css/unweighted.css" rel = "stylesheet" type = "text/css"/>
-    <script type="text/javascript" src="js/unweighted.js"></script>
+    <script type="text/javascript" src="js/uwgpa.js"></script>
   </head>
   <body>
-    <h1>Unweighted GPA</h1> 
+    <a class = "link1" href="index.html">Return Home</a>
+    <a class = "link2" href="weighted.html">Calculate weigted GPA</a>
+    <h1>Weighted GPA</h1>
+    <ol>
+      <li>Insert a letter grade. You must chose from A, B, C, D and F. You may add a + sign, - sign, or just leave the letter as it is.</li>
+      <li>Click the "Get Your GPA" button to see your weighted gpa!</li>
+      </ol>
+    <div class = "container">
+
+    <table id = "table" align = "left">
+      <TR>
+        <TD id = "classTitle"> Class  </TD>
+        <TD id = "gradeTitle">  Grade </TD>
+      </TR>
+      <TR>
+      <TD id = "class"> Class 1
+      </TD>
+      <TD id = "grade">
+        <form>
+          <br> <input id = "inputGrade" type="text" name="grade" placeholder="A">
+        </form>
+      </TD>
+        <TD>
+          <span id = "remove" onclick="remove()"><img  id = "trash" src="garbage.jpg"></span>
+        </TD>
+      </TR>
+      <TR>
+      <TD id = "class"> Class 2
+      </TD>
+      <TD id = "grade">
+        <form>
+          <br> <input id = "inputGrade" type="text" name="grade" placeholder="A">
+        </form>
+      </TD>
+          <TD>
+             <span id = "remove" onclick="remove()"><img  id = "trash" src="garbage.jpg"></span>
+          </TD>
+      </TR>
+      <TR>
+      <TD id = "class"> Class 3
+      </TD>
+      <TD id = "grade">
+        <form>
+          <br> <input id = "inputGrade" type="text" name="grade" placeholder="A">
+        </form>
+      </TD>
+          <TD>
+            <span id = "remove" onclick="remove()"><img  id = "trash" src="garbage.jpg"></span>
+          </TD>
+      </TR>
+      <TR>
+      <TD id = "class"> Class 4
+      </TD>
+      <TD id = "grade">
+        <form>
+          <br> <input id = "inputGrade" type="text" name="grade" placeholder="A">
+        </form>
+      </TD>
+          <TD>
+            <span id = "remove" onclick="remove()"><img  id = "trash" src="garbage.jpg"></span>
+          </TD>
+
+      </TR>
+      <TR>
+      <TD id = "class"> Class 5
+      </TD>
+      <TD id = "grade">
+          <form>
+            <br> <input id = "inputGrade" type="text" name="grade" placeholder="A">
+          </form> </TD>
+           <TD>
+             <img onclick="remove()" id = "trash" src="garbage.jpg">
+           </TD>
+      </TR>
+    </div>
+    </table>
+    <button onclick="addClass()" class = "addButton" id="addClass">+</button>
     <div>
+      <input type = "submit" value = "Get Your GPA" onclick="submit" id = "submit"></input>
+      <li id = "gpa"></li>
+    </div>
   </body>
 </html>

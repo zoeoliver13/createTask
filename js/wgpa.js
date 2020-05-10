@@ -1,13 +1,12 @@
 /*ADD A CLASS*/
-
 function addClass(table) {
-
   var table = document.getElementById("table");
   var row = table.insertRow(-1);
   var cell1 = row.insertCell(0);
-  var x = document.getElementById("table").rows.length - 1;
+  var x = document.getElementById("table").rows.length -2;
   var classNumber = document.createTextNode("Class " + x + " ");
   cell1.appendChild(classNumber);
+  cell1.value;
   var cell2 = row.insertCell(1);
   var grades = document.createElement("INPUT");
   grades.setAttribute("type","text");
@@ -17,6 +16,7 @@ function addClass(table) {
   grades.style.padding = "10px 10px 10px 10px";
   grades.style.textAlign = "center";
   grades.style.borderRadius = "5px";
+
   cell2.appendChild(grades);
   var cell3 = row.insertCell(2);
   var weight = document.createElement("INPUT");
@@ -43,9 +43,6 @@ function addClass(table) {
     div.remove();
           }
         }
-}
-/*SUBMIT INFO
-function submit(){
-  document.getElementById
+  /*CHECKS IF ANY BOXES ARE EMPTY*/
 
-}*/
+}

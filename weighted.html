@@ -7,7 +7,7 @@
     <link href = "css/weighted.css" rel = "stylesheet" type = "text/css"/>
     <script type="text/javascript" src="js/wgpa.js"></script>
   </head>
-  <body>
+  <body >
     <a class = "link1" href="index.html">Return Home</a>
     <a class = "link2" href="unweighted.html">Calculate unweighted GPA</a>
     <h1>Weighted GPA</h1>
@@ -16,16 +16,17 @@
       <li>Insert the weight of the grade depending on the class. Regular, honors, or AP. </li>
       <li>Click the "Get Your GPA" button to see your weighted gpa!</li>
       </ol>
-    <div class = "container">
+    <div onload = "examples()" class = "container">
 
     <table id = "table" align = "left">
+
       <TR>
         <TD id = "classTitle"> Class  </TD>
         <TD id = "gradeTitle">  Grade </TD>
         <TD id = "weightTitle"> Weight </TD>
       </TR>
-      <TR>
-      <TD id = "class"> Class 1
+      <TR id = "table">
+      <!--<TD id = "class"> Class 1
       </TD>
       <TD id = "grade">
         <form>
@@ -38,7 +39,7 @@
         </form>
       </TD>
         <TD>
-          <span id = "remove" onclick="remove()"><img  id = "trash" src="garbage.jpg"></span>
+          <span onclick="remove()" id = "remove" ><img id = "trash" src="garbage.jpg"></span>
         </TD>
       </TR>
       <TR>
@@ -108,13 +109,14 @@
            <TD>
              <img onclick="remove()" id = "trash" src="garbage.jpg">
            </TD>
-      </TR>
+      </TR>-->
     </div>
     </table>
-    <button onclick="addClass()" class = "addButton" id="addClass">+</button>
-    <div>
-      <input type = "submit" value = "Get Your GPA" onclick="submit" id = "submit"></input>
+    <div class = "submit">
+      <button onclick="addClass()" class = "addButton" id="addClass">+</button>
+      <input type = "submit" value = "Get Your GPA" onclick="submit()" id = "submit"></input>
       <li id = "gpa"></li>
+      <li id = "message"></li>
     </div>
   </body>
 </html>

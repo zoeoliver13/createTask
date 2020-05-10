@@ -90,7 +90,6 @@ ol{
 #addClass{
   position: relative;
   color: #ff00b3;
-  right:170px;
   top: 15px;
   margin-bottom: 10px;
   padding: 0px 15px 0px 15px;
@@ -101,7 +100,27 @@ ol{
 }
 
 #submit{
-  float:center;
+  margin-top: 75px;
+  position: relative;
+  left: 260px;
+  color: white;
+  font-size: 20px;
   width: 200px;
   height: 50px;
+  border-width: 5px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+#gpa{
+  list-style: none;
+  font-size: 60px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#message{
+  font-size: 45px;
+  text-align: center;
+  list-style: none;
 }

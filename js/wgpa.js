@@ -44,3 +44,8 @@ function addClass(table) {
           }
         }
 }
+/*SUBMIT INFO
+function submit(){
+  document.getElementById
+
+}*/

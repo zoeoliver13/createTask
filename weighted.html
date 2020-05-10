@@ -10,11 +10,12 @@
   <body>
     <h1>Weighted GPA</h1>
     <div class = "container">
-    <table id = "table">
-      <TR id = "first">
-        <TD> Class </TD>
-        <TD> Grade </TD>
-        <TD> Weight </TD>
+
+    <table id = "table" align = "left">
+      <TR>
+        <TD id = "classTitle"> Class  </TD>
+        <TD id = "gradeTitle">  Grade </TD>
+        <TD id = "weightTitle"> Weight </TD>
       </TR>
       <TR>
       <TD id = "class"> Class 1
@@ -83,6 +84,7 @@
           <TD>
             <span id = "remove" onclick="remove()"><img  id = "trash" src="garbage.jpg"></span>
           </TD>
+
       </TR>
       <TR>
       <TD id = "class"> Class 5
@@ -100,14 +102,11 @@
              <img onclick="remove()" id = "trash" src="garbage.jpg">
            </TD>
       </TR>
+    </div>
     </table>
-    <p>Add Class <button onclick="addClass()" class = "addButton" id="addClass">+</button></p>
-
-        <TR id = "add">
-          <TD>
-          </TD>
-        </TR>
-
-
+    <button onclick="addClass()" class = "addButton" id="addClass">+</button>
+    <div>
+      <button onclick="submit" id = "submit">Get Your GPA</button> 
+    </div>
   </body>
 </html>

@@ -9,14 +9,49 @@ h1{
   color: white;
   text-shadow: 4px 4px 0 #ff00b3, 2px 2px 0 #ff00b3;
 }
-tr{
-  padding-bottom: 5px;
+
+table {
+  margin-left: 20px;
+  border-collapse: collapse;
+  overflow-y:scroll;
+}
+
+th, td {
+  width:150px;
+  text-align:center;
+  padding:5px
+}
+
+li{
+  float: center;
+  vertical-align: middle;
 }
 /*CLASS SELECTORS*/
 
 /*ID SELECTORS*/
-#first{
-  margin-right: 10px;
+
+#classTitle{
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px 0 #ff00b3, 2px 2px 0 #ff00b3;
+}
+
+#gradeTitle{
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px 0 #ff00b3, 2px 2px 0 #ff00b3;
+}
+
+#weightTitle{
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px 0 #ff00b3, 2px 2px 0 #ff00b3;
 }
 #trash{
   width:50px;
@@ -28,9 +63,35 @@ tr{
 
 #inputGrade{
   width:17px;
-  margin: 10px 10px 10px 10px;
+  margin: 10px 20px 10px 30px;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  border-radius: 5px;
+  color: black;
 }
 
 #inputWeight{
   margin: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#addClass{
+  position: relative;
+  color: #ff00b3;
+  right:170px;
+  top: 0px;
+  margin-bottom: 10px;
+  padding: 0px 15px 0px 15px;
+  border-radius: 40px;
+  background-color: white;
+  text-align: center;
+  font-size: 60px;
+}
+
+#submit{
+  float:center;
+  width: 200px;
+  height: 50px;
 }

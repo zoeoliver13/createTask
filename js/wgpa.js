@@ -1,7 +1,7 @@
 /*ADD A CLASS*/
 function addClass(table) {
   var table = document.getElementById("table");
-  var row = table.insertRow(-1);
+/*  var row = table.insertRow(-1);
   var cell1 = row.insertCell(0);
   var x = document.getElementById("table").rows.length -2;
   var classNumber = document.createTextNode("Class " + x + " ");
@@ -27,14 +27,12 @@ function addClass(table) {
   weight.style.textAlign = "center";
   weight.style.borderRadius = "5px";
   cell3.appendChild(weight);
-  /*DELETE BUTTON*/
   var cell4 = row.insertCell(3);
   var img = document.createElement("img");
   img.src = "garbage.jpg";
   img.width = "50";
   img.className = "close"
   cell4.appendChild(img);
-  /*REMOVING A ROW*/
   var close = document.getElementsByClassName("close");
       for (var i = 0; i < close.length; i++) {
           close[i].onclick = function() {
@@ -43,7 +41,7 @@ function addClass(table) {
           }
         }
 }
-
+*/
 function submit(){
   var grades = document.createElement("INPUT");
   grades.setAttribute("type","text");

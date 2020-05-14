@@ -18,7 +18,7 @@
       </ol>
     <div onload = "examples()" class = "container">
 
-    <table id = "table" align = "left">
+    <table id = "table" align = "center">
 
       <TR>
         <TD id = "classTitle"> Class  </TD>
@@ -26,24 +26,18 @@
         <TD id = "weightTitle"> Weight </TD>
         <TD id = "creditsTitle"> Credits </TD>
       </TR>
-      <TR >
+      <TR>
         <TD id = "class"> Class 1
         </TD>
         <TD class = "grade">
-          <select id="grade1">
-            <option value = 4.00 > A </option>
-            <option value = 3.00 > B </option>
-            <option value = 2.00 > C </option>
-            <option value = 1.00 > D </option>
-            <option value = 0.00 > F </option>
-          </select>
+          <form id = grade>
+              <input type= "text" name = "grade" id = "grade1"></input>
+          </form>
         </TD>
         <TD class = "weight">
-          <select id = "weight1">
-            <option value = 1.00> Regular </option>
-            <option value = 1.125> Honors </option>
-            <option value = 1.25> AP </option>
-          </select>
+          <form id = weight>
+              <input type= "text" name = "weight" id = "weight1"></input>
+          </form>
         </TD>
         <TD>
           <form id = credits>
@@ -51,174 +45,139 @@
           </form>
         </TD>
         </TR>
-        <TD id = "class"> Class 2
-        </TD>
-        <TD class = "grade">
-          <select id="grade2">
-            <option value = 4.00 > A </option>
-            <option value = 3.00 > B </option>
-            <option value = 2.00 > C </option>
-            <option value = 1.00 > D </option>
-            <option value = 0.00> F </option>
-          </select>
-        </TD>
-        <TD class = "weight">
-          <select id = "weight2">
-            <option value = 1.00> Regular </option>
-            <option value = 1.125> Honors </option>
-            <option value = 1.25> AP </option>
-          </select>
-        </TD>
-        <TD>
-          <form id = credits>
-              <input type= "text" name = "credits" id = "credit2"></input>
-          </form>
-        </TD>
-        </TR>
-        <TD id = "class"> Class 3
-        </TD>
-        <TD class = "grade">
-          <select id="grade3">
-            <option value = 4.00 > A </option>
-            <option value = 3.00 > B </option>
-            <option value = 2.00 > C </option>
-            <option value = 1.00 > D </option>
-            <option value = 0.00> F </option>
-          </select>
-        </TD>
-        <TD class = "weight">
-          <select id = "weight3">
-            <option value = 1.00> Regular </option>
-            <option value = 1.125> Honors </option>
-            <option value = 1.25> AP </option>
-          </select>
-        </TD>
-        <TD>
-          <form id = credits>
-              <input type= "text" name = "credits" id = "credit3"></input>
-          </form>
-        </TD>
-        </TR>
-        <TD id = "class"> Class 4
-        </TD>
-        <TD class = "grade">
-          <select id="grade4">
-            <option value = 4.00 > A </option>
-            <option value = 3.00 > B </option>
-            <option value = 2.00 > C </option>
-            <option value = 1.00 > D </option>
-            <option value = 0.00> F </option>
-          </select>
-        </TD>
-        <TD class = "weight">
-          <select id = "weight4">
-            <option value = 1.00> Regular </option>
-            <option value = 1.125> Honors </option>
-            <option value = 1.25> AP </option>
-          </select>
-        </TD>
-        <TD>
-          <form id = credits>
-              <input type= "text" name = "credits" id = "credit4"></input>
-          </form>
-        </TD>
-        </TR>
-        <TD id = "class"> Class 5
-        </TD>
-        <TD class = "grade">
-          <select id="grade5">
-            <option value = 4.00 > A </option>
-            <option value = 3.00 > B </option>
-            <option value = 2.00 > C </option>
-            <option value = 1.00 > D </option>
-            <option value = 0.00> F </option>
-          </select>
-        </TD>
-        <TD class = "weight">
-          <select id = "weight5">
-            <option value = 1.00> Regular </option>
-            <option value = 1.125> Honors </option>
-            <option value = 1.25> AP </option>
-          </select>
-        </TD>
-        <TD>
-          <form id = credits>
-              <input type= "text" name = "credits"id = "credit5"></input>
-          </form>
-        </TD>
-        </TR>
-        <TD id = "class"> Class 6
-        </TD>
-        <TD class = "grade">
-          <select id="grade6">
-            <option value = 4.00 > A </option>
-            <option value = 3.00 > B </option>
-            <option value = 2.00 > C </option>
-            <option value = 1.00 > D </option>
-            <option value = 0.00> F </option>
-          </select>
-        </TD>
-        <TD class = "weight">
-          <select id = "weight6">
-            <option value = 1.00> Regular </option>
-            <option value = 1.125> Honors </option>
-            <option value = 1.25> AP </option>
-          </select>
-        </TD>
-        <TD>
-          <form id = credits>
-              <input type= "text" name = "credits" id = "credit6"></input>
-          </form>
-        </TD>
-        </TR>
-        <TD id = "class"> Class 7
-        </TD>
-        <TD class = "grade">
-          <select id="grade7">
-            <option value = 4.00 > A </option>
-            <option value = 3.00 > B </option>
-            <option value = 2.00 > C </option>
-            <option value = 1.00 > D </option>
-            <option value = 0.00> F </option>
-          </select>
-        </TD>
-        <TD class = "weight">
-          <select id = "weight7">
-            <option value = 1.00> Regular </option>
-            <option value = 1.125> Honors </option>
-            <option value = 1.25> AP </option>
-          </select>
-        </TD>
-        <TD>
-          <form id = credits>
-              <input type= "text" name = "credits" id = "credit7"></input>
-          </form>
-        </TD>
-        </TR>
-        <TD id = "class"> Class 8
-        </TD>
-        <TD class = "grade">
-          <select id="grade8">
-            <option value = 4.00 > A </option>
-            <option value = 3.00 > B </option>
-            <option value = 2.00 > C </option>
-            <option value = 1.00 > D </option>
-            <option value = 0.00> F </option>
-          </select>
-        </TD>
-        <TD class = "weight">
-          <select id = "weight8">
-            <option value = 1.00> Regular </option>
-            <option value = 1.125> Honors </option>
-            <option value = 1.25> AP </option>
-          </select>
-        </TD>
-        <TD>
-          <form id = credits>
-              <input type= "text" name = "credits" id = "credit8"></input>
-          </form>
-        </TD>
-        </TR>
+        <TR>
+          <TD id = "class"> Class 2
+          </TD>
+          <TD class = "grade">
+            <form id = grade>
+                <input type= "text" name = "grade" id = "grade2"></input>
+            </form>
+          </TD>
+          <TD class = "weight">
+            <form id = weight>
+                <input type= "text" name = "weight" id = "weight2"></input>
+            </form>
+          </TD>
+          <TD>
+            <form id = credits>
+                <input type= "text" name = "credits" id = "credit2"></input>
+            </form>
+          </TD>
+          </TR>
+          <TR>
+            <TD id = "class"> Class 3
+            </TD>
+            <TD class = "grade">
+              <form id = grade>
+                  <input type= "text" name = "grade" id = "grade3"></input>
+              </form>
+            </TD>
+            <TD class = "weight">
+              <form id = weight>
+                  <input type= "text" name = "weight" id = "weight3"></input>
+              </form>
+            </TD>
+            <TD>
+              <form id = credits>
+                  <input type= "text" name = "credits" id = "credit3"></input>
+              </form>
+            </TD>
+            </TR>
+            <TR>
+              <TD id = "class"> Class 4
+              </TD>
+              <TD class = "grade">
+                <form id = grade>
+                    <input type= "text" name = "grade" id = "grade4"></input>
+                </form>
+              </TD>
+              <TD class = "weight">
+                <form id = weight>
+                    <input type= "text" name = "weight" id = "weight4"></input>
+                </form>
+              </TD>
+              <TD>
+                <form id = credits>
+                    <input type= "text" name = "credits" id = "credit4"></input>
+                </form>
+              </TD>
+              </TR>
+              <TR>
+                <TD id = "class"> Class 5
+                </TD>
+                <TD class = "grade">
+                  <form id = grade>
+                      <input type= "text" name = "grade" id = "grade5"></input>
+                  </form>
+                </TD>
+                <TD class = "weight">
+                  <form id = weight>
+                      <input type= "text" name = "weight" id = "weight5"></input>
+                  </form>
+                </TD>
+                <TD>
+                  <form id = credits>
+                      <input type= "text" name = "credits" id = "credit5"></input>
+                  </form>
+                </TD>
+                </TR>
+                <TR>
+                  <TD id = "class"> Class 6
+                  </TD>
+                  <TD class = "grade">
+                    <form id = grade>
+                        <input type= "text" name = "grade" id = "grade6"></input>
+                    </form>
+                  </TD>
+                  <TD class = "weight">
+                    <form id = weight>
+                        <input type= "text" name = "weight" id = "weight6"></input>
+                    </form>
+                  </TD>
+                  <TD>
+                    <form id = credits>
+                        <input type= "text" name = "credits" id = "credit6"></input>
+                    </form>
+                  </TD>
+                  </TR>
+                  <TR>
+                    <TD id = "class"> Class 7
+                    </TD>
+                    <TD class = "grade">
+                      <form id = grade>
+                          <input type= "text" name = "grade" id = "grade7"></input>
+                      </form>
+                    </TD>
+                    <TD class = "weight">
+                      <form id = weight>
+                          <input type= "text" name = "weight" id = "weight7"></input>
+                      </form>
+                    </TD>
+                    <TD>
+                      <form id = credits>
+                          <input type= "text" name = "credits" id = "credit7"></input>
+                      </form>
+                    </TD>
+                    </TR>
+                    <TR>
+                      <TD id = "class"> Class 8
+                      </TD>
+                      <TD class = "grade">
+                        <form id = grade>
+                            <input type= "text" name = "grade" id = "grade8"></input>
+                        </form>
+                      </TD>
+                      <TD class = "weight">
+                        <form id = weight>
+                            <input type= "text" name = "weight" id = "weight8"></input>
+                        </form>
+                      </TD>
+                      <TD>
+                        <form id = credits>
+                            <input type= "text" name = "credits" id = "credit8"></input>
+                        </form>
+                      </TD>
+                      </TR>
     </div>
     </table>
     <div class = "submit">

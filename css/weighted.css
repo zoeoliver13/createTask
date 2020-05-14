@@ -15,24 +15,17 @@ h1{
   text-shadow: 4px 4px 0 #ff00b3, 2px 2px 0 #ff00b3;
 }
 
-table {
-  margin-left: 20px;
-  border-collapse: collapse;
-  overflow-y:scroll;
+table{
   margin-top: 30px;
 }
-
-th, td {
-  width:150px;
-  text-align:center;
-  padding:5px
-}
-
 li{
   float: center;
   vertical-align: middle;
 }
 
+td{
+  padding-right: 30px;
+}
 ol{
   text-align: center;
   display: inline;
@@ -94,29 +87,15 @@ ol{
   border-radius: 5px;
 }
 
-#addClass{
-  position: relative;
-  color: #ff00b3;
-  top: 15px;
-  margin-bottom: 10px;
-  padding: 0px 15px 0px 15px;
-  border-radius: 40px;
-  background-color: white;
-  text-align: center;
-  font-size: 60px;
-}
-
 #submit{
-  margin-top: 75px;
-  position: relative;
-  left: 260px;
   color: white;
   font-size: 20px;
   width: 200px;
   height: 50px;
   border-width: 5px;
   border-radius: 10px;
-  margin-bottom: 30px;
+  margin-left: 660px;
+  margin-top: 20px;
 }
 
 #gpa{

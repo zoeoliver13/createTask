@@ -104,6 +104,9 @@ function submit(){
 
   console.log(credit1);
   calculateGpa();
+
+  
+
 };
 
 function calculateGpa(){

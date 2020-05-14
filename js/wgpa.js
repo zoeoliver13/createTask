@@ -1,57 +1,120 @@
-/*ADD A CLASS*/
-function addClass(table) {
-  var table = document.getElementById("table");
-/*  var row = table.insertRow(-1);
-  var cell1 = row.insertCell(0);
-  var x = document.getElementById("table").rows.length -2;
-  var classNumber = document.createTextNode("Class " + x + " ");
-  cell1.appendChild(classNumber);
-  cell1.value;
-  var cell2 = row.insertCell(1);
-  var grades = document.createElement("INPUT");
-  grades.setAttribute("type","text");
-  grades.setAttribute("size", "2");
-  //grades.placeholder = "A";
-  grades.style.margin = "30px 10px 10px 25px";
-  grades.style.padding = "10px 10px 10px 10px";
-  grades.style.textAlign = "center";
-  grades.style.borderRadius = "5px";
-  cell2.appendChild(grades);
-  var cell3 = row.insertCell(2);
-  var weight = document.createElement("INPUT");
-  weight.setAttribute("type","text");
-  weight.setAttribute("size", "20");
-  weight.style.margin = "30px 10px 10px 10px";
-  weight.placeholder = "Regular";
-  weight.style.padding = "10px 10px 10px 10px";
-  weight.style.textAlign = "center";
-  weight.style.borderRadius = "5px";
-  cell3.appendChild(weight);
-  var cell4 = row.insertCell(3);
-  var img = document.createElement("img");
-  img.src = "garbage.jpg";
-  img.width = "50";
-  img.className = "close"
-  cell4.appendChild(img);
-  var close = document.getElementsByClassName("close");
-      for (var i = 0; i < close.length; i++) {
-          close[i].onclick = function() {
-    var div = this.parentElement.parentElement;
-    div.remove();
-          }
-        }
-}
-*/
+const grade = [];
+const credit = [];
+const weight = [];
+
+var grade1;
+var grade2;
+var grade3;
+var grade4;
+var grade5;
+var grade6;
+var grade7;
+var grade8;
+var credit1;
+var credit2;
+var credit3;
+var credit4;
+var credit5;
+var credit6;
+var credit7;
+var credit8;
+var weight1;
+var weight2;
+var weight3;
+var weight4;
+var weight5;
+var weight6;
+var weight7;
+var weight8;
+var average = 0;
+
 function submit(){
-  var grades = document.createElement("INPUT");
-  grades.setAttribute("type","text");
-  inputGrades = grades.value;
-  var weight = document.createElement("INPUT");
-  weight.setAttribute("type","text");
-  inputWeight = weight.value;
-if( grades.value == null){
-    alert("not working");
-  }else{
-    alert(" working");
+  grade1 = document.getElementById('grade1');
+  grade.push(grade1);
+  console.log(grade1);
+
+  grade2 = document.getElementById('grade2');
+  grade.push(grade2);
+
+  grade3 = document.getElementById('grade3');
+  grade.push(grade4);
+
+  grade4 = document.getElementById('grade4');
+  grade.push(grade4);
+
+  grade5 = document.getElementById('grade5');
+  grade.push(grade5);
+
+  grade6 = document.getElementById('grade6');
+  grade.push(grade6);
+
+  grade7 = document.getElementById('grade7');
+  grade.push(grade7);
+
+  grade8 = document.getElementById('grade8');
+  grade.push(grade8);
+
+  credit1 = document.getElementById('credit1');
+  credit.push(credit1);
+
+  credit2 = document.getElementById('credit2');
+  credit.push(credit2);
+
+  credit3 = document.getElementById('credit3');
+  credit.push(credit3);
+
+  credit4 = document.getElementById('credit4');
+  credit.push(credit4);
+
+  credit5 = document.getElementById('credit5');
+  credit.push(credit5);
+
+  credit6 = document.getElementById('credit6');
+  credit.push(credit6);
+
+  credit7 = document.getElementById('credit7');
+  credit.push(credit7);
+
+  credit8 = document.getElementById('credit8');
+  credit.push(credit8);
+
+  weight1 = document.getElementById('weight1');
+  weight.push(weight1);
+
+  weight2 = document.getElementById('weight2');
+  weight.push(weight2);
+
+  weight3 = document.getElementById('weight3');
+  weight.push(weight3);
+
+  weight4 = document.getElementById('weight4');
+  weight.push(weight4);
+
+  weight5 = document.getElementById('weight5');
+  weight.push(weight5);
+
+  weight6 = document.getElementById('weight6');
+  weight.push(weight6);
+
+  weight7 = document.getElementById('weight7');
+  weight.push(weight7);
+
+  weight8 = document.getElementById('weight8');
+  weight.push(weight8);
+
+  console.log(credit1);
+  calculateGpa();
+};
+
+function calculateGpa(){
+let sum = 0;
+let sumCredit = 0;
+  for (let i = 0; i < 8; i++) {
+      sum += grade[i] * credit[i] * weight[i];
   }
+  for (let y = 0; y < 8; y++){
+      sumCredit += credit[y];
+  }
+  average = sum/sumCredit;
+  console.log(average);
 }

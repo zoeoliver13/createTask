@@ -1,6 +1,5 @@
 const grade = [];
 const credit = [];
-const weight = [];
 
 var grade1;
 var grade2;
@@ -79,6 +78,7 @@ function submit(){
 function calculateGpa(){
 let sum = 0;
 let sumCredit = 0;
+let gpa = document.getElementById("gpa");
   for (let i = 0; i < 8; i++) {
     credit[i] = parseInt(credit[i]);
       sum += grade[i] * credit[i];
@@ -89,4 +89,9 @@ let sumCredit = 0;
 
   average = sum/sumCredit;
   console.log(average);
+  gpa.innerHTML = average;
 }
+ //RELOAD THE PAGE
+ function reload(){
+   window.location.reload();
+ }

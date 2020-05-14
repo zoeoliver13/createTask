@@ -96,6 +96,10 @@ ol{
   border-radius: 10px;
   margin-left: 660px;
   margin-top: 20px;
+  position: absolute;
+  top: 45%;
+  right: 12%;
+
 }
 
 #gpa{
@@ -103,10 +107,22 @@ ol{
   font-size: 60px;
   text-align: center;
   font-weight: bold;
+  position: absolute;
+  top: 57%;
+  right: 19%;
 }
 
 #message{
   font-size: 45px;
   text-align: center;
   list-style: none;
+}
+#reload{
+  border-radius: 30px;
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  width: 70px;
+  height: 70px;
+  padding: 10px;
 }

@@ -111,6 +111,9 @@ function submit(){
 function calculateGpa(){
 let sum = 0;
 let sumCredit = 0;
+let gpa = document.getElementById("gpa");
+let message = document.getElementById("message")
+
   for (let i = 0; i < 8; i++) {
     credit[i] = parseInt(credit[i]);
       sum += grade[i] * credit[i] * weight[i];
@@ -121,4 +124,9 @@ let sumCredit = 0;
 
   average = sum/sumCredit;
   console.log(average);
-}
+  gpa.innerHTML = average;
+  }
+
+  function reload(){
+    window.location.reload();
+  }

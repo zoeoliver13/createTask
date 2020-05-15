@@ -18,24 +18,7 @@ var credit8;
 var average = 0;
 
 //FUNCTIONS//
-  //Calculates GPA//
-function getGPA(){
-var sum = 0;
-var credits = 0;
-var gpa = document.getElementById("gpa");
-  for (var x = 0; x < 8; x++) {
-    credit[x] = parseInt(credit[x]);
-      sum += grade[x] * credit[x];
-  }
-  for (var y = 0; y < 8; y++){
-      credits += credit[y];
-  }
 
-  average = sum/credits;
-  //Prints under the button//
-  average = average.toLocaleString ('en', {minimumFractionDigits : 1 , maximimFractionDigits: 1});
-  gpa.innerHTML = average;
-}
 const grade = [];
 const credit = [];
 
@@ -78,8 +61,24 @@ function submit(){
 
   getGPA();
 };
+//Calculates GPA//
+function getGPA(){
+var sum = 0;
+var credits = 0;
+var gpa = document.getElementById("gpa");
+for (var x = 0; x < 8; x++) {
+  credit[x] = parseInt(credit[x]);
+    sum += grade[x] * credit[x];
+}
+for (var y = 0; y < 8; y++){
+    credits += credit[y];
+}
 
- //RELOAD THE PAGE//
+average = sum/credits;
+//Prints under the button//
+average = average.toLocaleString ('en', {minimumFractionDigits : 1 , maximimFractionDigits: 1});
+gpa.innerHTML = average;
+}
  function reload(){
    var yes = confirm("Are you sure you want to clear your inputs to make a new one? ");
    if(yes == true){

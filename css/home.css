@@ -1,50 +1,51 @@
 *{
   font-family: "Lucida Console", Courier, monospace;
-  background-color: #00bab7;
+  background-color: #3BD8DD;
 }
 /*TYPE SELECTORS*/
+
+/*Title*/
+
 h1{
   font-size: 80px;
   text-align: center;
   color: white;
-  text-shadow: 4px 4px 0 #ff00b3, 2px 2px 0 #ff00b3;
-  background-color: black;
+  text-shadow: 4px 4px 0 #ff00b3, 2px 2px 0 #01AABC;
+  background-color: #FBB0D7;
+  border: 5px solid black;
+  width: 80%;
+  margin-left: 10%;
+  padding: 1%;
 }
+
+/* Website Description */
 
 h2{
-  font-size: 45px;
+  font-size: 35px;
   text-align: center;
-  color: white;
-  background-color: black;
+  color: #ff00b3;
+  background-color: white;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 0%;
+  padding: 1%;
 }
 /*ClASS SELECTORS*/
-.popUp{
-  font-size: 40px;
-  padding-top: 10px;
-  position: relative;
-  bottom: -50px;
-  right: -400px;
-}
-.topHalf{
-  background-color: black;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-width: 5px;
-  border-color: #ff00b3;
-  margin-top: 100px;
-}
+
+/* unweighted Button*/
 
 .unweighted{
-  margin-top: 20px;
-  margin-left: 200px;
-  margin-right: 200px;
-  padding: 15px 25px;
+  margin-top: 2%;
+  margin-left: 5%;
+  padding: 1%;
   font-size: 50px;
   background-color: white;
   color: #ff00b3;
-  font-weight:bold;
+  font-weight: bold;
   border-radius: 10px;
   box-shadow: 0 10px #ff00b3;
+  float: left;
 }
 
 .unweighted:active{
@@ -54,13 +55,16 @@ h2{
 }
 
 .weighted{
-  padding: 15px 25px;
+  padding: 1%;;
   font-size: 50px;
   background-color: white;
   color: #ff00b3;
   font-weight:bold;
   border-radius: 10px;
   box-shadow: 0 10px #ff00b3;
+  float: right;
+  margin-right: 4%;
+  margin-top: 2%;
 }
 
 .weighted:active{
@@ -68,4 +72,14 @@ h2{
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
-/*ID SELECTORS*/
+.popUp{
+  font-size: 40px;
+  margin-top: 3%;
+  position: relative;
+  margin-left: 25%;
+  float: left;
+  color: #ff00b3;
+  background-color: white;
+  padding: 1%;
+
+}

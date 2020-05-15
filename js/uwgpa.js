@@ -88,7 +88,7 @@ let gpa = document.getElementById("gpa");
   }
 
   average = sum/sumCredit;
-  console.log(average);
+  average = average.toLocaleString ('en', {minimumFractionDigits : 3 , maximimFractionDigits: 3});
   gpa.innerHTML = average;
 }
  //RELOAD THE PAGE

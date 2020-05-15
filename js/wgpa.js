@@ -32,7 +32,6 @@ function submit(){
   grade1 = document.getElementById('grade1').value;
   grade.push(grade1);
 
-
   grade2 = document.getElementById('grade2').value;
   grade.push(grade2);
 
@@ -123,7 +122,7 @@ let message = document.getElementById("message")
   }
 
   average = sum/sumCredit;
-  console.log(average);
+  average = average.toLocaleString ('en', {minimumFractionDigits : 3 , maximimFractionDigits: 3});
   gpa.innerHTML = average;
   }
 

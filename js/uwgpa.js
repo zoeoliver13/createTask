@@ -27,6 +27,9 @@ const credit = [];
 function submit(){
   grade1 = document.getElementById('grade1').value;
     grade.push(grade1);
+    if(grade1 = null){
+      alert("no");
+    }
   grade2 = document.getElementById('grade2').value;
     grade.push(grade2);
   grade3 = document.getElementById('grade3').value;
@@ -43,6 +46,7 @@ function submit(){
     grade.push(grade8);
   credit1 = document.getElementById('credit1').value;
     credit.push(credit1);
+
   credit2 = document.getElementById('credit2').value;
     credit.push(credit2);
   credit3 = document.getElementById('credit3').value;
@@ -57,27 +61,33 @@ function submit(){
     credit.push(credit7);
   credit8 = document.getElementById('credit8').value;
     credit.push(credit8);
-
-
+    if(credit1 == "" || credit2 == "" || credit3 == "" || credit4 == "" || credit5 == "" || credit6 == "" || credit7 == "" || credit8 == ""){
+      alert("You left a credit cell empty. Make sure they're all filled out")
+      return false
+    }
   getGPA();
+
+
 };
 //Calculates GPA//
 function getGPA(){
 var sum = 0;
 var credits = 0;
 var gpa = document.getElementById("gpa");
+grade1 = document.getElementById('grade1').value;
 for (var x = 0; x < 8; x++) {
   credit[x] = parseInt(credit[x]);
     sum += grade[x] * credit[x];
 }
 for (var y = 0; y < 8; y++){
     credits += credit[y];
+
 }
 
 average = sum/credits;
 //Prints under the button//
-average = average.toLocaleString ('en', {minimumFractionDigits : 1 , maximimFractionDigits: 1});
-gpa.innerHTML = average;
+averagePrint = average.toLocaleString ('en', {minimumFractionDigits : 1 , maximimFractionDigits: 1});
+gpa.innerHTML = averagePrint;
 }
  function reload(){
    var yes = confirm("Are you sure you want to clear your inputs to make a new one? ");

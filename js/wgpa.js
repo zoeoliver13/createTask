@@ -101,6 +101,10 @@ function submit(){
   weight8 = document.getElementById('weight8').value;
   weight.push(weight8);
 
+  if(credit1 == "" || credit2 == "" || credit3 == "" || credit4 == "" || credit5 == "" || credit6 == "" || credit7 == "" || credit8 == ""){
+    alert("You left a credit cell empty. Make sure they're all filled out")
+    return false
+  }
   calculateGpa();
 
 

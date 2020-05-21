@@ -54,29 +54,34 @@ function submit(){
   grade.push(grade8);
 
   credit1 = document.getElementById('credit1').value;
-  credit.push(credit1);
 
   credit2 = document.getElementById('credit2').value;
-  credit.push(credit2);
 
   credit3 = document.getElementById('credit3').value;
-  credit.push(credit3);
 
   credit4 = document.getElementById('credit4').value;
-  credit.push(credit4);
 
   credit5 = document.getElementById('credit5').value;
-  credit.push(credit5);
 
   credit6 = document.getElementById('credit6').value;
-  credit.push(credit6);
 
   credit7 = document.getElementById('credit7').value;
-  credit.push(credit7);
 
   credit8 = document.getElementById('credit8').value;
-  credit.push(credit8);
 
+  if(credit1 == "" || isNaN(credit1) || credit2 == "" || isNaN(credit2)|| credit3 == "" || isNaN(credit3)|| credit4 == "" || isNaN(credit4)|| credit5 == "" || isNaN(credit5)|| credit6 == "" || isNaN(credit6)|| credit7 == "" || isNaN(credit7)|| credit8 == ""|| isNaN(credit8)){
+    alert("You left a credit cell empty or did not input a number. Make sure they're all filled out and are numbers");
+    return false;
+  } else {
+    credit.push(credit1);
+    credit.push(credit2);
+    credit.push(credit3);
+    credit.push(credit4);
+    credit.push(credit5);
+    credit.push(credit6);
+    credit.push(credit7);
+    credit.push(credit8);
+  }
   weight1 = document.getElementById('weight1').value;
   weight.push(weight1);
 
@@ -101,13 +106,8 @@ function submit(){
   weight8 = document.getElementById('weight8').value;
   weight.push(weight8);
 
-  if(credit1 == "" || credit2 == "" || credit3 == "" || credit4 == "" || credit5 == "" || credit6 == "" || credit7 == "" || credit8 == ""){
-    alert("You left a credit cell empty. Make sure they're all filled out")
-    return false
-  }
+
   calculateGpa();
-
-
 
 };
 
